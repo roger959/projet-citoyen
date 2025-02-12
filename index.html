@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Citoyen</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0d47a1, #1976d2, #2196f3);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: white;
+            text-align: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 15px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            padding: 0;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #9b59b6;
+            transform: scale(1.1);
+        }
+
+        .btn-container {
+            position: absolute;
+            left: 20px;
+        }
+
+        .btn {
+            background: #9b59b6;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+            color: white;
+        }
+
+        .btn:hover {
+            background: #8e44ad;
+            transform: scale(1.1);
+        }
+
+        .content {
+            margin-top: 80px;
+            padding: 50px 20px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #9b59b6;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.6s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .staff {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .staff-member {
+            text-align: center;
+        }
+
+        .staff-member img {
+            width: 150px;
+            height: auto;
+            transition: transform 0.3s;
+            border-radius: 15px; /* Ajoute une bordure arrondie */
+        }
+
+        .staff-member img:hover {
+            transform: scale(1.1);
+        }
+
+        .content img {
+            width: 420px; /* Réduit la taille de l'image */
+            height: auto;
+            transition: transform 0.3s, border-radius 0.3s;
+            border-radius: 15px; /* Ajoute une bordure arrondie */
+        }
+
+        .content img:hover {
+            transform: scale(1.1); /* Ajoute un effet de survol */
+            border-radius: 25px; /* Change la bordure arrondie au survol */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="btn-container">
+            <button class="btn" onclick="handleClick('apropos')">À propos de nous</button>
+        </div>
+        <ul class="nav-links">
+            <li><a href="javascript:void(0);" onclick="handleClick('accueil')">Accueil</a></li>
+            <li><a href="javascript:void(0);" onclick="handleClick('interview')">Interview</a></li>
+            <li><a href="javascript:void(0);" onclick="handleClick('apropos')">À propos</a></li>
+            <li><a href="javascript:void(0);" onclick="handleClick('sondage')">Sondage</a></li>
+            <li><a href="javascript:void(0);" onclick="handleClick('association')">Association</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div id="accueil" class="fade-in">
+            <h1>Bienvenue sur la page d'accueil</h1>
+            <p>Les réseaux sociaux façonnent nos perceptions des genres. Découvrez comment les images diffusées en ligne influencent les stéréotypes et creusent les inégalités.</p>
+            <img src="image/egalité homme femme.jpg" alt="Image représentant l'égalité homme-femme">
+            <h2>Bienvenue sur notre projet citoyen !</h2>
+            <p><strong>Sujet :</strong> Comment les images des hommes et des femmes sur les réseaux sociaux renforcent-elles les stéréotypes et les inégalités entre les genres ?</p>
+            <p>Les réseaux sociaux sont devenus un reflet puissant de notre société, influençant notre perception des rôles et des identités de genre. Cependant, ces plateformes diffusent souvent des images qui perpétuent des stéréotypes et des inégalités entre les hommes et les femmes.</p>
+            <p>À travers ce projet, nous analysons comment ces représentations impactent la perception des genres et alimentent les inégalités sociales. Notre objectif est de sensibiliser à ces enjeux et de promouvoir une représentation plus juste et équilibrée des hommes et des femmes dans l’espace numérique.</p>
+            <img src="image/reseaux sociaux.jpg" alt="Image représentant les réseaux sociaux">
+            <p><strong>🌍 Ensemble, œuvrons pour un monde numérique plus inclusif et égalitaire !</strong></p>
+        </div>
+
+        <div id="interview" class="hidden fade-in">
+            <h1>Page d'interview</h1>
+            <p>Retrouvez ici les témoignages et analyses d'experts sur l'impact des réseaux sociaux sur l'image des hommes et des femmes.</p>
+        </div>
+
+        <div id="apropos" class="hidden fade-in">
+            <h1>À propos du projet citoyen</h1>
+            <p>Notre projet citoyen explore comment les images des hommes et des femmes sur les réseaux sociaux renforcent les stéréotypes de genre et alimentent les inégalités. En analysant les représentations véhiculées en ligne, nous mettons en lumière les biais inconscients et leurs conséquences sur la perception des rôles sociaux.</p>
+            
+            <h2>Notre Équipe</h2>
+            <div class="staff">
+                <div class="staff-member">
+                    <img src="staff/clement.webp" alt="Photo de Clément" style="width:150px;height:auto;">
+                    <p>Clément</p>
+                </div>
+                <div class="staff-member">
+                    <img src="staff/paul.webp" alt="Photo de Paul" style="width:150px;height:auto;">
+                    <p>Paul</p>
+                </div>
+                <div class="staff-member">
+                    <img src="staff/roger.webp" alt="Photo de Roger" style="width:150px;height:auto;">
+                    <p>Roger</p>
+                </div>
+            </div>
+            
+            <h2>Nos Motivations</h2>
+            <p>Nous sommes passionnés par l'égalité des genres et nous croyons fermement que les réseaux sociaux jouent un rôle crucial dans la formation des perceptions de genre. Notre objectif est de sensibiliser le public aux stéréotypes de genre et de promouvoir des représentations plus équilibrées et justes des hommes et des femmes en ligne. En travaillant avec des associations et en menant des recherches approfondies, nous espérons contribuer à un changement positif dans la société.</p>
+        </div>
+
+        <div id="sondage" class="hidden fade-in">
+            <h1>Sondage</h1>
+            <p>Découvrez les résultats de nos enquêtes sur la perception des stéréotypes de genre en ligne.</p>
+        </div>
+
+        <div id="association" class="hidden fade-in">
+            <h1>Association</h1>
+            <p>Nos collaborations avec des associations engagées pour l'égalité des genres sur les réseaux sociaux.</p>
+        </div>
+    </div>
+
+    <script>
+        function handleClick(page) {
+            console.log("Navigation vers : " + page);
+            
+            document.querySelectorAll('.content > div').forEach(div => {
+                div.classList.add('hidden');
+            });
+            
+            let section = document.getElementById(page);
+            section.classList.remove('hidden');
+            section.classList.add('fade-in');
+        }
+    </script>
+</body>
+</html>
