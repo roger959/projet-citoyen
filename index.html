@@ -3,151 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+
     <title>Projet Citoyen</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #0d47a1, #1976d2, #2196f3);
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            color: white;
-            text-align: center;
-        }
 
-        .navbar {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: rgba(0, 0, 0, 0.9);
-            padding: 15px 20px;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 100;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-        }
-
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 30px;
-            padding: 0;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-            transition: color 0.3s, transform 0.2s;
-        }
-
-        .nav-links a:hover {
-            color: #9b59b6;
-            transform: scale(1.1);
-        }
-
-        .btn-container {
-            position: absolute;
-            left: 20px;
-        }
-
-        .btn {
-            background: #9b59b6;
-            border: none;
-            padding: 10px 18px;
-            border-radius: 20px;
-            font-size: 14px;
-            cursor: pointer;
-            transition: background 0.3s, transform 0.2s;
-            color: white;
-        }
-
-        .btn:hover {
-            background: #8e44ad;
-            transform: scale(1.1);
-        }
-
-        .content {
-            margin-top: 80px;
-            padding: 50px 20px;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        h1 {
-            font-size: 28px;
-            font-weight: bold;
-            color: #9b59b6;
-            text-shadow: 2px 2px 5px black;
-        }
-
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeIn 0.6s ease-in-out forwards;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .staff {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .staff-member {
-            text-align: center;
-        }
-
-        .staff-member img {
-            width: 150px;
-            height: auto;
-            transition: transform 0.3s;
-            border-radius: 15px; /* Ajoute une bordure arrondie */
-        }
-
-        .staff-member img:hover {
-            transform: scale(1.1);
-        }
-
-        .content img {
-            width: 420px; /* Réduit la taille de l'image */
-            height: auto;
-            transition: transform 0.3s, border-radius 0.3s;
-            border-radius: 15px; /* Ajoute une bordure arrondie */
-        }
-
-        .content img:hover {
-            transform: scale(1.1); /* Ajoute un effet de survol */
-            border-radius: 25px; /* Change la bordure arrondie au survol */
-        }
-
-        .survey-item {
-            grid-row: auto;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .survey-item img {
-            margin-top: 10px;
-        }
-    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -167,13 +27,21 @@
         <div id="accueil" class="fade-in">
             <h1>Bienvenue sur la page d'accueil</h1>
             <p>Les réseaux sociaux façonnent nos perceptions des genres. Découvrez comment les images diffusées en ligne influencent les stéréotypes et creusent les inégalités.</p>
-            <img src="image/egalité homme femme.jpg" alt="Image représentant l'égalité homme-femme">
-            <h2>Bienvenue sur notre projet citoyen !</h2>
+           
+           
             <p><strong>Sujet :</strong> Comment les images des hommes et des femmes sur les réseaux sociaux renforcent-elles les stéréotypes et les inégalités entre les genres ?</p>
+            <br>
+            <img src="image/reseaux sociaux.jpg" alt="Image représentant l'égalité homme-femme">
+            <br>
             <p>Les réseaux sociaux sont devenus un reflet puissant de notre société, influençant notre perception des rôles et des identités de genre. Cependant, ces plateformes diffusent souvent des images qui perpétuent des stéréotypes et des inégalités entre les hommes et les femmes.</p>
+            <br>
             <p>À travers ce projet, nous analysons comment ces représentations impactent la perception des genres et alimentent les inégalités sociales. Notre objectif est de sensibiliser à ces enjeux et de promouvoir une représentation plus juste et équilibrée des hommes et des femmes dans l’espace numérique.</p>
-            <img src="image/reseaux sociaux.jpg" alt="Image représentant les réseaux sociaux">
-            <p><strong>🌍 Ensemble, œuvrons pour un monde numérique plus inclusif et égalitaire !</strong></p>
+            <br>
+            
+            
+            <br>
+            <footer><p><strong>🌍 Ensemble, œuvrons pour un monde numérique plus inclusif et égalitaire !</strong></p></footer>
+            
         </div>
 
         <div id="interview" class="hidden fade-in">
@@ -189,15 +57,19 @@
             <div class="staff">
                 <div class="staff-member">
                     <img src="staff/clement.webp" alt="Photo de Clément" style="width:150px;height:auto;">
-                    <p>Clément</p>
+                    <p>CF</p>
                 </div>
                 <div class="staff-member">
                     <img src="staff/paul.webp" alt="Photo de Paul" style="width:150px;height:auto;">
-                    <p>Paul</p>
+                    <p>PC</p>
                 </div>
                 <div class="staff-member">
                     <img src="staff/roger.webp" alt="Photo de Roger" style="width:150px;height:auto;">
-                    <p>Roger</p>
+                    <p>RL</p>
+                </div>
+                <div class="staff-member">
+                    <img src="staff/ralph2.webp" alt="Photo de Ralph" style="width:150px;height:auto;">
+                    <p>RB</p>
                 </div>
             </div>
             
@@ -264,9 +136,66 @@
 
         <div id="association" class="hidden fade-in">
             <h1>Association</h1>
-            <p>Nos collaborations avec des associations engagées pour l'égalité des genres sur les réseaux sociaux.</p>
+            <p>Voici les différentes associations engagées pour l'égalité des genres sur les réseaux sociaux que nous avons contactées.</p>
+            
+            <div class="associations">
+                <div class="association-item">
+                    <a href="https://www.unwomen.org/fr" target="_blank" title="ONU Femmes (UN Women)">
+                        <img src="image/onufemme.png" alt="ONU Femmes" height="200">
+                        <p>ONU Femmes (UN Women)</p>
+                    </a>
+                    <figcaption>L'agence des Nations Unies pour l'égalité des sexes met en lumière les stéréotypes de genre dans les médias et les réseaux sociaux.</figcaption>
+                </div>
+                
+                <div class="association-item">
+                    <a href="https://www.planning-familial.org/fr" target="_blank" title="Planning Familial">
+                        <img src="image/planningf.png" alt="Planning Familial" height="200">
+                        <p>Planning Familial</p>
+                    </a>
+                    <figcaption>En France, cette organisation traite des inégalités de genre et des pressions sociales, y compris celles véhiculées par les images sur les réseaux.</figcaption>
+                </div>
+                
+                <div class="association-item">
+                    <a href="https://osezlefeminisme.fr/" target="_blank" title="Osez le Féminisme">
+                        <img src="image/osezlef.png" alt="Osez le Féminisme" height="200">
+                        <p>Osez le Féminisme</p>
+                    </a>
+                    <figcaption>Cette association lutte activement contre les stéréotypes sexistes et milite pour l'égalité des genres.</figcaption>
+                </div>
+                
+                <div class="association-item">
+                    <a href="https://fondationdesfemmes.org/" target="_blank" title="La Fondation des Femmes">
+                        <img src="image/fondadf.png" alt="La Fondation des Femmes" height="200">
+                        <p>La Fondation des Femmes</p>
+                    </a>
+                    <figcaption>Une organisation française qui soutient des projets pour l'égalité entre les hommes et les femmes, notamment en dénonçant les clichés sexistes.</figcaption>
+                </div>
+                
+                <div class="association-item">
+                    <a href="https://www.chayn.co/" target="_blank" title="Chayn">
+                        <img src="image/chayn.png" alt="Chayn" height="200">
+                        <p>Chayn</p>
+                    </a>
+                    <figcaption>Un réseau mondial qui aide les femmes à identifier et combattre les dynamiques sexistes en ligne, y compris les stéréotypes véhiculés par les images.</figcaption>
+                </div>
+                
+                <div class="association-item">
+                    <a href="https://geenadavisinstitute.org/" target="_blank" title="Geena Davis Institute">
+                        <img src="image/geena.png" alt="Geena Davis Institute" height="200">
+                        <p>Geena Davis Institute</p>
+                    </a>
+                    <figcaption>Basée aux États-Unis, cette organisation étudie les représentations des genres dans les médias et plaide pour une représentation équitable.</figcaption>
+                </div>
+                
+                <div class="association-item">
+                    <a href="https://endrapeoncampus.org/" target="_blank" title="End Rape on Campus (EROC)">
+                        <img src="image/eroc.png" alt="End Rape on Campus (EROC)" height="200">
+                        <p>End Rape on Campus (EROC)</p>
+                    </a>
+                    <figcaption>Une organisation qui traite des violences sexistes en ligne, souvent renforcées par les stéréotypes diffusés sur les réseaux sociaux.</figcaption>
+                </div>
+            </div>
         </div>
-    </div>
 
     <script>
         function handleClick(page) {
@@ -281,5 +210,6 @@
             section.classList.add('fade-in');
         }
     </script>
+    
 </body>
 </html>
