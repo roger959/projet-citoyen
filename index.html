@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script defer src="index.js"></script>
-
     <title>Projet Citoyen</title>
-
 </head>
 <body>
     <nav class="navbar">
@@ -78,58 +76,70 @@
         <div id="sondage" class="hidden fade-in">
             <h1>Sondage</h1>
             <p>Découvrez les résultats de nos enquêtes sur la perception des stéréotypes de genre en ligne.</p>
-            <ul>
-                <li class="survey-item">
-                    <span>Les hommes et les femmes sont-ils représentés de manière égale dans les médias ?</span>
-                    <br>
-                    <img src="sondage/sondage 1.png" alt="Image de sondage 1" style="width:200px;height:auto;">
-                </li>
-                <li class="survey-item">
-                    <span>Les personnages masculins et féminins occupent-ils des rôles différents ?</span>
-                    <br>
-                    <img src="sondage/sondage 2.png" alt="Image de sondage 2" style="width:200px;height:auto;">
-                </li>
-                <li class="survey-item">
-                    <span>Les femmes sont-elles souvent valorisées pour leur apparence plutôt que leurs compétences ?</span>
-                    <br>
-                    <img src="sondage/sondage 3.png" alt="Image de sondage 3" style="width:200px;height:auto;">
-                </li>
-                <li class="survey-item">
-                    <span>Les hommes sont-ils souvent représentés comme forts, autoritaires, ou émotionnellement réservés ?</span>
-                    <br>
-                    <img src="sondage/sondage 4.png" alt="Image de sondage 4" style="width:200px;height:auto;">
-                </li>
-                <li class="survey-item">
-                    <span>Les médias influencent-ils la perception des rôles traditionnels de genre ?</span>
-                    <br>
-                    <img src="sondage/sondage 5.png" alt="Image de sondage 5" style="width:200px;height:auto;">
-                </li>
-                <li class="survey-item">
-                    <span>Avez-vous ressenti une pression à vous conformer à des attentes de genre à cause des médias ?</span>
-                    <br>
-                    <img src="sondage/sondage 6.png" alt="Image de sondage 6" style="width:200px;height:auto;">
-                </li>
-                <li class="survey-item">
-                    <span>Les médias influencent-ils les choix de carrière des jeunes ?</span>
-                    <br>
-                    <img src="sondage/sondage 7.png" alt="Image de sondage 7" style="width:200px;height:auto;">
-                </li>
-                <li class="survey-item">
-                    <span>Les médias représentent-ils suffisamment de femmes en leadership ?</span>
-                    <br>
-                    <img src="sondage/sondage 8.png" alt="Image de sondage 8" style="width:200px;height:auto;">
-                </li>
-                <li class="survey-item">
-                    <span>Les médias reflètent-ils la diversité des genres de manière équilibrée ?</span>
-                    <br>
-                    <img src="sondage/sondage 9.png" alt="Image de sondage 9" style="width:200px;height:auto;">
-                </li>
-                <li class="survey-item">
-                    <span>La représentation des genres dans les médias a-t-elle évolué positivement ?</span>
-                    <br>
-                    <img src="sondage/sondage 10.png" alt="Image de sondage 10" style="width:200px;height:auto;">
-                </li>
-            </ul>
+            
+            <!-- Le bouton pour afficher ou masquer les sondages -->
+            <button class="toggle-btn" onclick="toggleText(this)">▼</button>
+            
+            <!-- Section contenant les sondages cachée par défaut -->
+            <div class="hidden-text" id="surveyList">
+                <ul>
+                    <li class="survey-item">
+                        <span>Les hommes et les femmes sont-ils représentés de manière égale dans les médias ?</span>
+                        <br>
+                        <img src="sondage/sondage 1.png" alt="Image de sondage 1" style="width:200px;height:auto;">
+                    </li>
+                    <li class="survey-item">
+                        <span>Les personnages masculins et féminins occupent-ils des rôles différents ?</span>
+                        <br>
+                        <img src="sondage/sondage 2.png" alt="Image de sondage 2" style="width:200px;height:auto;">
+                    </li>
+                    <li class="survey-item">
+                        <span>Les femmes sont-elles souvent valorisées pour leur apparence plutôt que leurs compétences ?</span>
+                        <br>
+                        <img src="sondage/sondage 3.png" alt="Image de sondage 3" style="width:200px;height:auto;">
+                    </li>
+                    <li class="survey-item">
+                        <span>Les hommes sont-ils souvent représentés comme forts, autoritaires, ou émotionnellement réservés ?</span>
+                        <br>
+                        <img src="sondage/sondage 4.png" alt="Image de sondage 4" style="width:200px;height:auto;">
+                    </li>
+                    <li class="survey-item">
+                        <span>Les médias influencent-ils la perception des rôles traditionnels de genre ?</span>
+                        <br>
+                        <img src="sondage/sondage 5.png" alt="Image de sondage 5" style="width:200px;height:auto;">
+                    </li>
+                    <li class="survey-item">
+                        <span>Avez-vous ressenti une pression à vous conformer à des attentes de genre à cause des médias ?</span>
+                        <br>
+                        <img src="sondage/sondage 6.png" alt="Image de sondage 6" style="width:200px;height:auto;">
+                    </li>
+                    <li class="survey-item">
+                        <span>Les médias influencent-ils les choix de carrière des jeunes ?</span>
+                        <br>
+                        <img src="sondage/sondage 7.png" alt="Image de sondage 7" style="width:200px;height:auto;">
+                    </li>
+                    <li class="survey-item">
+                        <span>Les médias représentent-ils suffisamment de femmes en leadership ?</span>
+                        <br>
+                        <img src="sondage/sondage 8.png" alt="Image de sondage 8" style="width:200px;height:auto;">
+                    </li>
+                    <li class="survey-item">
+                        <span>Les médias reflètent-ils la diversité des genres de manière équilibrée ?</span>
+                        <br>
+                        <img src="sondage/sondage 9.png" alt="Image de sondage 9" style="width:200px;height:auto;">
+                    </li>
+                    <li class="survey-item">
+                        <span>La représentation des genres dans les médias a-t-elle évolué positivement ?</span>
+                        <br>
+                        <img src="sondage/sondage 10.png" alt="Image de sondage 10" style="width:200px;height:auto;">
+                    </li>
+                    <li class="survey-item special-survey-item">
+                        <span>Les médias influencent-ils la perception des rôles traditionnels de genre ?</span>
+                        <br>
+                        <img src="sondage/sondages.png" alt="Image de sondage 11" style="width:200px;height:auto;">
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <div id="association" class="hidden fade-in">
@@ -159,6 +169,18 @@
                         <p>Osez le Féminisme</p>
                     </a>
                     <figcaption>Cette association lutte activement contre les stéréotypes sexistes et milite pour l'égalité des genres.</figcaption>
+                    <button class="toggle-btn" onclick="toggleText(this)">▼</button>
+                    <div class="hidden-text">
+                        <p>Réponse de l’association “Osez le Féminisme” :</p>
+                        <p>Les hommes et les femmes sont-ils représentés de manière égale dans les médias ? Non ! Les hommes monopolisent l’espace médiatique en tant qu’experts et leaders, reléguant les femmes à des rôles secondaires.</p>
+                        <p>Les personnages masculins et féminins occupent-ils des rôles différents ? Oui, les femmes sont encore cantonnées à des rôles subalternes et stéréotypés (mères, épouses, objets de désir), tandis que les hommes incarnent le pouvoir et l’action.</p>
+                        <p>Les femmes sont-elles souvent valorisées pour leur apparence plutôt que leurs compétences ? Absolument ! La dictature de l’apparence féminine dans les médias dévalorise les compétences des femmes et alimente leur objectification.</p>
+                        <p>Les hommes sont-ils souvent représentés comme forts, autoritaires ou émotionnellement réservés ? Oui, la virilité toxique est omniprésente. Ce modèle oppressif enferme les hommes dans une image de domination et de répression émotionnelle.</p>
+                        <p>Les médias influencent-ils la perception des rôles traditionnels de genre ? Oui, ils fabriquent et perpétuent des normes sexistes en présentant des rôles genrés comme "naturels", légitimant ainsi les inégalités.</p>
+                        <p>Avez-vous ressenti une pression à vous conformer à des attentes de genre à cause des médias ? Oui, les femmes subissent des injonctions constantes à correspondre aux standards de beauté et aux rôles attendus, générant insécurité et mal-être.</p>
+                        <p>Les médias influencent-ils les choix de carrière des jeunes ? Oui, le manque de modèles féminins dans certains métiers limite les ambitions des filles et entretient la ségrégation professionnelle.</p>
+                        <p>Les médias représentent-ils suffisamment de femmes en leadership ? Non ! Les femmes dirigeantes restent invisibilisées ou réduites à des considérations superficielles, renforçant l’idée que le pouvoir est masculin.</p>
+                    </div>
                 </div>
                 
                 <div class="association-item">
@@ -191,6 +213,21 @@
                         <p>End Rape on Campus (EROC)</p>
                     </a>
                     <figcaption>Une organisation qui traite des violences sexistes en ligne, souvent renforcées par les stéréotypes diffusés sur les réseaux sociaux.</figcaption>
+                </div>
+
+                <!-- Ajout du nouveau code -->
+                <div class="association-item">
+                    <a href="https://osezlefeminisme.fr/" target="_blank" title="Osez le Féminisme">
+                        <img src="image/osezlef.png" alt="Osez le Féminisme" height="200">
+                        <p>Osez le Féminisme</p>
+                    </a>
+                    <figcaption>Cette association lutte activement contre les stéréotypes sexistes et milite pour l'égalité des genres.</figcaption>
+                    <button class="toggle-btn" onclick="toggleText(this)">▼</button>
+                    <div class="hidden-text">
+                        <p>Réponse de l’association “Fondation des Femmes” :</p>
+                        <p>Les hommes et les femmes sont-ils représentés de manière égale dans les médias ? Non, la représentation reste profondément inégale. Les femmes sont sous-représentées dans les médias, tant en termes de temps de parole que de présence à l'écran. Cette disparité est particulièrement marquée dans certains domaines comme l'expertise et le sport, où la présence féminine est encore plus réduite. Cette sous-représentation contribue à l'invisibilisation des femmes dans l'espace public et renforce les inégalités existantes.</p>
+                        <!-- Ajoutez les autres réponses ici -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -263,19 +300,7 @@
             </section>
         </div>
 
-    <script>
-        function handleClick(page) {
-            console.log("Navigation vers : " + page);
-            
-            document.querySelectorAll('.content > div').forEach(div => {
-                div.classList.add('hidden');
-            });
-            
-            let section = document.getElementById(page);
-            section.classList.remove('hidden');
-            section.classList.add('fade-in');
-        }
-    </script>
+    
     
 </body>
 </html>
