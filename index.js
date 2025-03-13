@@ -22,15 +22,13 @@ function handleClick(page) {
     section.classList.remove('hidden');
     section.classList.add('fade-in');
 }
-
-
-    function toggleText(button) {
-        const hiddenText = button.nextElementSibling;
-        if (hiddenText.style.display === "none" || hiddenText.style.display === "") {
-            hiddenText.style.display = "block";
-            button.textContent = "▲";
-        } else {
-            hiddenText.style.display = "none";
-            button.textContent = "▼";
-        }
-    }
+function toggleImages(button) {
+    const images = document.querySelectorAll('.survey-image');
+    let areHidden = Array.from(images).every(img => img.style.display === 'none');
+    
+    images.forEach(img => {
+        img.style.display = areHidden ? 'block' : 'none';
+    });
+    
+    button.textContent = areHidden ? 'Masquer les résultats ▲' : 'Afficher les résultats ▼';
+}
