@@ -14,42 +14,63 @@
         </div>
         <ul class="nav-links">
             <li><a href="javascript:void(0);" onclick="handleClick('accueil')">Accueil</a></li>
-            <li><a href="javascript:void(0);" onclick="handleClick('apropos')">À propos</a></li>
+            <li><a href="javascript:void(0);" onclick="handleClick('interview')">témoignages</a></li>
             <li><a href="javascript:void(0);" onclick="handleClick('sondage')">Sondage</a></li>
             <li><a href="javascript:void(0);" onclick="handleClick('association')">Association</a></li>
             <li><a href="javascript:void(0);" onclick="handleClick('bilan')">Bilan</a></li>
         </ul>
     </nav>
- 
+
     <div class="content">
         <div id="accueil" class="fade-in">
             <h1>Bienvenue sur la page d'accueil</h1>
+            <br><br>
             <p>Les réseaux sociaux façonnent nos perceptions des genres. Découvrez comment les images diffusées en ligne influencent les stéréotypes et creusent les inégalités.</p>
-           
-           
+            <br><br>
             <p><strong>Sujet :</strong> Comment les images des hommes et des femmes sur les réseaux sociaux renforcent-elles les stéréotypes et les inégalités entre les genres ?</p>
-            <br>
+            <br><br>
             <img src="image/reseaux sociaux.jpg" alt="Image représentant l'égalité homme-femme">
-            <br>
+            <br><br>
             <p>Les réseaux sociaux sont devenus un reflet puissant de notre société, influençant notre perception des rôles et des identités de genre. Cependant, ces plateformes diffusent souvent des images qui perpétuent des stéréotypes et des inégalités entre les hommes et les femmes.</p>
-            <br>
+            <br><br>
             <p>À travers ce projet, nous analysons comment ces représentations impactent la perception des genres et alimentent les inégalités sociales. Notre objectif est de sensibiliser à ces enjeux et de promouvoir une représentation plus juste et équilibrée des hommes et des femmes dans l’espace numérique.</p>
-            <br>
-            <br>
+            <br><br>
             <footer><p><strong>🌍 Ensemble, œuvrons pour un monde numérique plus inclusif et égalitaire !</strong></p></footer>
-           
+            <br><br>
         </div>
- 
+
         <div id="interview" class="hidden fade-in">
-            <h1>Page d'interview</h1>
+            <h1>Page de témoignages</h1>
+            <br>
             <p>Retrouvez ici les témoignages et analyses d'experts sur l'impact des réseaux sociaux sur l'image des hommes et des femmes.</p>
+            <br><br>
+            
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/mXx5yMBHjLw?si=bO6yFL6cIWAyhZPP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <br><br>
+            
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KpjJbSx6Cxg?si=R3dgPhfS2EBGdA2R" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <br><br>
+            
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_vFrYX4pMrE?si=o3r8ijX_gtqrVI3C" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <br><br>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KLZL0L3zIu8?si=-8-BilDN-4lSPeuv" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
- 
+
         <div id="apropos" class="hidden fade-in">
             <h1>À propos du projet citoyen</h1>
+            <br>
             <p>Notre projet citoyen explore comment les images des hommes et des femmes sur les réseaux sociaux renforcent les stéréotypes de genre et alimentent les inégalités. En analysant les représentations véhiculées en ligne, nous mettons en lumière les biais inconscients et leurs conséquences sur la perception des rôles sociaux.</p>
-           
+            <br>
             <h2>Notre Équipe</h2>
+            <br>
             <div class="staff">
                 <div class="staff-member">
                     <img src="staff/clement.webp" alt="Photo de Clément" style="width:150px;height:auto;">
@@ -68,84 +89,92 @@
                     <p>RB</p>
                 </div>
             </div>
-           
+            <br>
             <h2>Nos Motivations</h2>
+            <br>
             <p>Nous sommes passionnés par l'égalité des genres et nous croyons fermement que les réseaux sociaux jouent un rôle crucial dans la formation des perceptions de genre. Notre objectif est de sensibiliser le public aux stéréotypes de genre et de promouvoir des représentations plus équilibrées et justes des hommes et des femmes en ligne. En travaillant avec des associations et en menant des recherches approfondies, nous espérons contribuer à un changement positif dans la société.</p>
+            <br>
         </div>
- 
+
         <div id="sondage" class="hidden fade-in">
             <h1>Sondage</h1>
+            <br>
             <p>Découvrez les résultats de nos enquêtes sur la perception des stéréotypes de genre en ligne.</p>
            
-            <!-- Le bouton pour afficher ou masquer les sondages -->
-            <button class="toggle-btn" onclick="toggleText(this)">▼</button>
            
-            <!-- Section contenant les sondages cachée par défaut -->
-            <div class="hidden-text" id="surveyList">
-                <ul>
-                    <li class="survey-item">
-                        <span>Les hommes et les femmes sont-ils représentés de manière égale dans les médias ?</span>
-                        <br>
-                        <img src="sondage/sondage 1.png" alt="Image de sondage 1" style="width:200px;height:auto;">
-                    </li>
-                    <li class="survey-item">
-                        <span>Les personnages masculins et féminins occupent-ils des rôles différents ?</span>
-                        <br>
-                        <img src="sondage/sondage 2.png" alt="Image de sondage 2" style="width:200px;height:auto;">
-                    </li>
-                    <li class="survey-item">
-                        <span>Les femmes sont-elles souvent valorisées pour leur apparence plutôt que leurs compétences ?</span>
-                        <br>
-                        <img src="sondage/sondage 3.png" alt="Image de sondage 3" style="width:200px;height:auto;">
-                    </li>
-                    <li class="survey-item">
-                        <span>Les hommes sont-ils souvent représentés comme forts, autoritaires, ou émotionnellement réservés ?</span>
-                        <br>
-                        <img src="sondage/sondage 4.png" alt="Image de sondage 4" style="width:200px;height:auto;">
-                    </li>
-                    <li class="survey-item">
-                        <span>Les médias influencent-ils la perception des rôles traditionnels de genre ?</span>
-                        <br>
-                        <img src="sondage/sondage 5.png" alt="Image de sondage 5" style="width:200px;height:auto;">
-                    </li>
-                    <li class="survey-item">
-                        <span>Avez-vous ressenti une pression à vous conformer à des attentes de genre à cause des médias ?</span>
-                        <br>
-                        <img src="sondage/sondage 6.png" alt="Image de sondage 6" style="width:200px;height:auto;">
-                    </li>
-                    <li class="survey-item">
-                        <span>Les médias influencent-ils les choix de carrière des jeunes ?</span>
-                        <br>
-                        <img src="sondage/sondage 7.png" alt="Image de sondage 7" style="width:200px;height:auto;">
-                    </li>
-                    <li class="survey-item">
-                        <span>Les médias représentent-ils suffisamment de femmes en leadership ?</span>
-                        <br>
-                        <img src="sondage/sondage 8.png" alt="Image de sondage 8" style="width:200px;height:auto;">
-                    </li>
-                    <li class="survey-item">
-                        <span>Les médias reflètent-ils la diversité des genres de manière équilibrée ?</span>
-                        <br>
-                        <img src="sondage/sondage 9.png" alt="Image de sondage 9" style="width:200px;height:auto;">
-                    </li>
-                    <li class="survey-item">
-                        <span>La représentation des genres dans les médias a-t-elle évolué positivement ?</span>
-                        <br>
-                        <img src="sondage/sondage 10.png" alt="Image de sondage 10" style="width:200px;height:auto;">
-                    </li>
-                    <li class="survey-item special-survey-item">
-                        <span>Les médias influencent-ils la perception des rôles traditionnels de genre ?</span>
-                        <br>
-                        <img src="sondage/sondages.png" alt="Image de sondage 11" style="width:200px;height:auto;">
-                    </li>
-                </ul>
-            </div>
-        </div>
+            <!-- Le bouton pour afficher ou masquer les photos -->
+            <button class="toggle-btn" onclick="togglePhotos()">▼</button>
+            <br><br>
  
+            <!-- Section contenant les photos cachée par défaut -->
+            <div class="photo-gallery hidden" id="photoGallery">
+                <span>Les hommes et les femmes sont-ils représentés de manière égale dans les médias ?</span>
+                <br>
+                <br>
+                <img src="sondage/sondage 1.png" alt="Image de sondage 1" style="width:200px;height:auto;">
+                <br><br>
+                <br>
+                <span>Les personnages masculins et féminins occupent-ils des rôles différents ?</span>
+                <br>
+                <br>
+                <img src="sondage/sondage 2.png" alt="Image de sondage 2" style="width:200px;height:auto;">
+                <br><br>
+                <br>
+                <span>Les femmes sont-elles souvent valorisées pour leur apparence plutôt que leurs compétences ?</span>
+                <br><br>
+                <br>
+                <img src="sondage/sondage 3.png" alt="Image de sondage 3" style="width:200px;height:auto;">
+                <br><br>
+                <br>
+                <span>Les médias influencent-ils la perception des rôles traditionnels de genre ?</span>
+                <br><br>
+                <br>
+                <img src="sondage/sondage 4.png" alt="Image de sondage 4" style="width:200px;height:auto;">
+                <br><br>
+                <br>
+                <span>Les hommes sont-ils souvent représentés comme forts, autoritaires, ou émotionnellement réservés ?</span>
+                <br><br>
+                <br><br>
+                <img src="sondage/sondage 5.png" alt="Image de sondage 5" style="width:200px;height:auto;">
+                <br><br>
+                <span>Avez-vous ressenti une pression à vous conformer à des attentes de genre à cause des médias ?</span>
+                <br><br>
+                <br><br>
+                <img src="sondage/sondage 6.png" alt="Image de sondage 6" style="width:200px;height:auto;">
+                <br><br>
+                <span>Les médias influencent-ils les choix de carrière des jeunes ?</span>
+                <br><br>
+                <br><br>
+                <img src="sondage/sondage 7.png" alt="Image de sondage 7" style="width:200px;height:auto;">
+                <br><br>
+                <span>Les médias représentent-ils suffisamment de femmes en leadership ?</span>
+                <br><br>
+                <br><br>
+                <img src="sondage/sondage 8.png" alt="Image de sondage 8" style="width:200px;height:auto;">
+                <br><br>
+                <span>Les médias reflètent-ils la diversité des genres de manière équilibrée ?</span>
+                <br><br>
+                <br><br>
+                <img src="sondage/sondage 9.png" alt="Image de sondage 9" style="width:200px;height:auto;">
+                <br><br>
+                <span>La représentation des genres dans les médias a-t-elle évolué positivement ?</span>
+                <br><br>
+                <br><br>
+                <img src="sondage/sondage 10.png" alt="Image de sondage 10" style="width:200px;height:auto;">
+                <br><br>
+                <br><br>
+                <br><br>
+               
+            </div>
+            <br><br>
+        </div>
+
         <div id="association" class="hidden fade-in">
             <h1>Association</h1>
+            <br>
+            <br>
             <p>Voici les différentes associations engagées pour l'égalité des genres sur les réseaux sociaux que nous avons contactées.</p>
-           
+            <br>
             <div class="associations">
                 <div class="association-item">
                     <a href="https://www.unwomen.org/fr" target="_blank" title="ONU Femmes (UN Women)">
@@ -154,7 +183,7 @@
                     </a>
                     <figcaption>L'agence des Nations Unies pour l'égalité des sexes met en lumière les stéréotypes de genre dans les médias et les réseaux sociaux.</figcaption>
                 </div>
-               
+                
                 <div class="association-item">
                     <a href="https://www.planning-familial.org/fr" target="_blank" title="Planning Familial">
                         <img src="image/planningf.png" alt="Planning Familial" height="200">
@@ -162,27 +191,7 @@
                     </a>
                     <figcaption>En France, cette organisation traite des inégalités de genre et des pressions sociales, y compris celles véhiculées par les images sur les réseaux.</figcaption>
                 </div>
-               
-                <div class="association-item">
-                    <a href="https://osezlefeminisme.fr/" target="_blank" title="Osez le Féminisme">
-                        <img src="image/osezlef.png" alt="Osez le Féminisme" height="200">
-                        <p>Osez le Féminisme</p>
-                    </a>
-                    <figcaption>Cette association lutte activement contre les stéréotypes sexistes et milite pour l'égalité des genres.</figcaption>
-                    <button class="toggle-btn" onclick="toggleText(this)">▼</button>
-                    <div class="hidden-text">
-                        <p>Réponse de l’association “Osez le Féminisme” :</p>
-                        <p>Les hommes et les femmes sont-ils représentés de manière égale dans les médias ? Non ! Les hommes monopolisent l’espace médiatique en tant qu’experts et leaders, reléguant les femmes à des rôles secondaires.</p>
-                        <p>Les personnages masculins et féminins occupent-ils des rôles différents ? Oui, les femmes sont encore cantonnées à des rôles subalternes et stéréotypés (mères, épouses, objets de désir), tandis que les hommes incarnent le pouvoir et l’action.</p>
-                        <p>Les femmes sont-elles souvent valorisées pour leur apparence plutôt que leurs compétences ? Absolument ! La dictature de l’apparence féminine dans les médias dévalorise les compétences des femmes et alimente leur objectification.</p>
-                        <p>Les hommes sont-ils souvent représentés comme forts, autoritaires ou émotionnellement réservés ? Oui, la virilité toxique est omniprésente. Ce modèle oppressif enferme les hommes dans une image de domination et de répression émotionnelle.</p>
-                        <p>Les médias influencent-ils la perception des rôles traditionnels de genre ? Oui, ils fabriquent et perpétuent des normes sexistes en présentant des rôles genrés comme "naturels", légitimant ainsi les inégalités.</p>
-                        <p>Avez-vous ressenti une pression à vous conformer à des attentes de genre à cause des médias ? Oui, les femmes subissent des injonctions constantes à correspondre aux standards de beauté et aux rôles attendus, générant insécurité et mal-être.</p>
-                        <p>Les médias influencent-ils les choix de carrière des jeunes ? Oui, le manque de modèles féminins dans certains métiers limite les ambitions des filles et entretient la ségrégation professionnelle.</p>
-                        <p>Les médias représentent-ils suffisamment de femmes en leadership ? Non ! Les femmes dirigeantes restent invisibilisées ou réduites à des considérations superficielles, renforçant l’idée que le pouvoir est masculin.</p>
-                    </div>
-                </div>
-               
+                
                 <div class="association-item">
                     <a href="https://fondationdesfemmes.org/" target="_blank" title="La Fondation des Femmes">
                         <img src="image/fondadf.png" alt="La Fondation des Femmes" height="200">
@@ -190,7 +199,7 @@
                     </a>
                     <figcaption>Une organisation française qui soutient des projets pour l'égalité entre les hommes et les femmes, notamment en dénonçant les clichés sexistes.</figcaption>
                 </div>
-               
+                
                 <div class="association-item">
                     <a href="https://www.chayn.co/" target="_blank" title="Chayn">
                         <img src="image/chayn.png" alt="Chayn" height="200">
@@ -198,7 +207,7 @@
                     </a>
                     <figcaption>Un réseau mondial qui aide les femmes à identifier et combattre les dynamiques sexistes en ligne, y compris les stéréotypes véhiculés par les images.</figcaption>
                 </div>
-               
+                
                 <div class="association-item">
                     <a href="https://geenadavisinstitute.org/" target="_blank" title="Geena Davis Institute">
                         <img src="image/geena.png" alt="Geena Davis Institute" height="200">
@@ -206,7 +215,7 @@
                     </a>
                     <figcaption>Basée aux États-Unis, cette organisation étudie les représentations des genres dans les médias et plaide pour une représentation équitable.</figcaption>
                 </div>
-               
+                
                 <div class="association-item">
                     <a href="https://endrapeoncampus.org/" target="_blank" title="End Rape on Campus (EROC)">
                         <img src="image/eroc.png" alt="End Rape on Campus (EROC)" height="200">
@@ -214,7 +223,7 @@
                     </a>
                     <figcaption>Une organisation qui traite des violences sexistes en ligne, souvent renforcées par les stéréotypes diffusés sur les réseaux sociaux.</figcaption>
                 </div>
- 
+
                 <!-- Ajout du nouveau code -->
                 <div class="association-item">
                     <a href="https://osezlefeminisme.fr/" target="_blank" title="Osez le Féminisme">
@@ -222,7 +231,6 @@
                         <p>Osez le Féminisme</p>
                     </a>
                     <figcaption>Cette association lutte activement contre les stéréotypes sexistes et milite pour l'égalité des genres.</figcaption>
-                    <button class="toggle-btn" onclick="toggleText(this)">▼</button>
                     <div class="hidden-text">
                         <p>Réponse de l’association “Fondation des Femmes” :</p>
                         <p>Les hommes et les femmes sont-ils représentés de manière égale dans les médias ? Non, la représentation reste profondément inégale. Les femmes sont sous-représentées dans les médias, tant en termes de temps de parole que de présence à l'écran. Cette disparité est particulièrement marquée dans certains domaines comme l'expertise et le sport, où la présence féminine est encore plus réduite. Cette sous-représentation contribue à l'invisibilisation des femmes dans l'espace public et renforce les inégalités existantes.</p>
@@ -230,12 +238,13 @@
                     </div>
                 </div>
             </div>
+            <br><br>
         </div>
- 
+
         <div id="bilan" class="hidden fade-in">
             <h1>Bilan</h1>
-            <p>Voici un aperçu de ce qui a été fait et ce qui reste à faire pour promouvoir l'égalité des genres sur les réseaux sociaux.</p>
-           
+            <p style="text-align: center;">Voici un aperçu de ce qui a été fait et ce qui reste à faire pour promouvoir l'égalité des genres sur les réseaux sociaux.</p>
+            
             <h2>1. Ce qui a déjà été fait</h2>
             <div class="bilan-section">
                 <h3>📊 Études et rapports</h3>
@@ -246,7 +255,7 @@
                 </ul>
                 <p>Les ONG comme l’UNESCO et ONU Femmes soulignent que les représentations des femmes sur les réseaux sociaux sont souvent réduites à des rôles secondaires ou sexualisés.</p>
             </div>
-           
+            
             <div class="bilan-section">
                 <h3>📢 Mouvements et campagnes</h3>
                 <p>Des initiatives citoyennes et militantes émergent pour lutter contre ces inégalités :</p>
@@ -256,7 +265,7 @@
                     <li><strong>Stop Cybersexism :</strong> Organisation sensibilisant aux violences et stéréotypes de genre en ligne.</li>
                 </ul>
             </div>
-           
+            
             <div class="bilan-section">
                 <h3>🛑 Régulation et modération</h3>
                 <p>Les plateformes sociales ont mis en place des politiques de modération, mais celles-ci sont souvent insuffisantes :</p>
@@ -265,7 +274,7 @@
                     <li>En France, le label <strong>"Égalité numérique"</strong> encourage une représentation plus équitable.</li>
                 </ul>
             </div>
-           
+            
             <h2>2. Ce qui reste à faire</h2>
             <div class="bilan-section">
                 <h3>🛠 Analyser les algorithmes</h3>
@@ -275,16 +284,16 @@
                     <li>Créer des outils d’audit pour identifier les biais algorithmiques.</li>
                 </ul>
             </div>
-           
+            
             <div class="bilan-section">
-                <h3>🗣 Explorer les témoignages</h</h3>
+                <h3>🗣 Explorer les témoignages</h3>
                 <p>Illustrer l’impact des stéréotypes par des témoignages permet de mieux comprendre leurs effets concrets :</p>
                 <ul>
                     <li>Interviewer des influenceurs et influenceuses sur leurs expériences.</li>
                     <li>Recueillir des témoignages anonymes via des sondages.</li>
                 </ul>
             </div>
-           
+            
             <div class="bilan-section">
                 <h3>💡 Proposer des solutions</h3>
                 <p>Des actions concrètes doivent être mises en place :</p>
@@ -293,7 +302,7 @@
                     <li>Développer des algorithmes plus inclusifs qui favorisent une diversité d’images et de contenus.</li>
                 </ul>
             </div>
-           
+            
             <div class="bilan-section">
                 <h3>🎨 Création de contenus alternatifs</h3>
                 <p>Promouvoir des images et représentations alternatives est essentiel :</p>
@@ -302,7 +311,10 @@
                     <li>Lancer des campagnes visuelles mettant en avant l’inclusion et l’égalité.</li>
                 </ul>
             </div>
+            <br><br>
         </div>
     </div>
+    
+
 </body>
 </html>
