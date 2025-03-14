@@ -14,10 +14,10 @@
         </div>
         <ul class="nav-links">
             <li><a href="javascript:void(0);" onclick="handleClick('accueil')">Accueil</a></li>
-            <li><a href="javascript:void(0);" onclick="handleClick('interview')">témoignages</a></li>
+            <li><a href="javascript:void(0);" onclick="handleClick('interview')">Témoignage</a></li>
             <li><a href="javascript:void(0);" onclick="handleClick('sondage')">Sondage</a></li>
             <li><a href="javascript:void(0);" onclick="handleClick('association')">Association</a></li>
-            <li><a href="javascript:void(0);" onclick="handleClick('bilan')">Bilan</a></li>
+            <li><a href="javascript:void(0);" onclick="handleClick('bilan')">Solution</a></li>
         </ul>
     </nav>
 
@@ -101,7 +101,6 @@
             <br>
             <p>Découvrez les résultats de nos enquêtes sur la perception des stéréotypes de genre en ligne.</p>
            
-           
             <!-- Le bouton pour afficher ou masquer les photos -->
             <button class="toggle-btn" onclick="togglePhotos()">▼</button>
             <br><br>
@@ -109,62 +108,158 @@
             <!-- Section contenant les photos cachée par défaut -->
             <div class="photo-gallery hidden" id="photoGallery">
                 <span>Les hommes et les femmes sont-ils représentés de manière égale dans les médias ?</span>
-                <br>
-                <br>
+                <br><br>
                 <img src="sondage/sondage 1.png" alt="Image de sondage 1" style="width:200px;height:auto;">
                 <br><br>
+                <p>Réponses :</p>
                 <br>
+                <ul>
+                    <li>Oui, ils sont représentés de manière équitable.</li>
+                    <br>
+                    <li>Non, les hommes sont davantage présents.</li>
+                    <br>
+                    <li>Non, les femmes sont souvent reléguées à des rôles secondaires.</li>
+                    <br>
+                    <li>Cela dépend du type de média (cinéma, télévision, presse…).</li>
+                </ul>
+                <br><br>
+
                 <span>Les personnages masculins et féminins occupent-ils des rôles différents ?</span>
-                <br>
-                <br>
+                <br><br>
                 <img src="sondage/sondage 2.png" alt="Image de sondage 2" style="width:200px;height:auto;">
                 <br><br>
+                <p>Réponses :</p>
                 <br>
+                <ul>
+                    <li>Oui, les hommes ont souvent des rôles d’action ou de pouvoir, tandis que les femmes ont des rôles plus passifs.</li>
+                    <br>
+                    <li>Non, la répartition des rôles est équilibrée.</li>
+                    <br>
+                    <li>Cela varie selon le genre de contenu (films, publicités, séries…).</li>
+                </ul>
+                <br><br>
+
                 <span>Les femmes sont-elles souvent valorisées pour leur apparence plutôt que leurs compétences ?</span>
                 <br><br>
-                <br>
                 <img src="sondage/sondage 3.png" alt="Image de sondage 3" style="width:200px;height:auto;">
                 <br><br>
+                <p>Réponses :</p>
                 <br>
+                <ul>
+                    <li>Oui, l’apparence est souvent mise en avant au détriment des compétences.</li>
+                    <br>
+                    <li>Non, les femmes sont mises en avant pour leurs talents et réalisations.</li>
+                    <br>
+                    <li>Cela dépend du contexte et du type de média.</li>
+                </ul>
+                <br><br>
+
                 <span>Les médias influencent-ils la perception des rôles traditionnels de genre ?</span>
                 <br><br>
-                <br>
                 <img src="sondage/sondage 4.png" alt="Image de sondage 4" style="width:200px;height:auto;">
                 <br><br>
+                <p>Réponses :</p>
                 <br>
-                <span>Les hommes sont-ils souvent représentés comme forts, autoritaires, ou émotionnellement réservés ?</span>
+                <ul>
+                    <li>Oui, ils renforcent souvent les stéréotypes de genre.</li>
+                    <br>
+                    <li>Oui, mais de plus en plus de médias tentent de les déconstruire.</li>
+                    <br>
+                    <li>Non, les médias reflètent seulement la réalité sociale.</li>
+                </ul>
                 <br><br>
+
+                <span>Les hommes sont-ils souvent représentés comme forts, autoritaires, ou émotionnellement réservés ?</span>
                 <br><br>
                 <img src="sondage/sondage 5.png" alt="Image de sondage 5" style="width:200px;height:auto;">
                 <br><br>
-                <span>Avez-vous ressenti une pression à vous conformer à des attentes de genre à cause des médias ?</span>
+                <p>Réponses :</p>
+                <br>
+                <ul>
+                    <li>Oui, ce sont des traits fréquemment attribués aux personnages masculins.</li>
+                    <br>
+                    <li>Non, les représentations sont de plus en plus variées.</li>
+                    <br>
+                    <li>Cela dépend du média et du contexte culturel.</li>
+                </ul>
                 <br><br>
+
+                <span>Avez-vous ressenti une pression à vous conformer à des attentes de genre à cause des médias ?</span>
                 <br><br>
                 <img src="sondage/sondage 6.png" alt="Image de sondage 6" style="width:200px;height:auto;">
                 <br><br>
-                <span>Les médias influencent-ils les choix de carrière des jeunes ?</span>
+                <p>Réponses :</p>
+                <br>
+                <ul>
+                    <li>Oui, très souvent.</li>
+                    <br>
+                    <li>Oui, parfois.</li>
+                    <br>
+                    <li>Non, jamais.</li>
+                </ul>
                 <br><br>
+
+                <span>Les médias influencent-ils les choix de carrière des jeunes ?</span>
                 <br><br>
                 <img src="sondage/sondage 7.png" alt="Image de sondage 7" style="width:200px;height:auto;">
                 <br><br>
-                <span>Les médias représentent-ils suffisamment de femmes en leadership ?</span>
+                <p>Réponses :</p>
+                <br>
+                <ul>
+                    <li>Oui, les représentations des métiers influencent les aspirations professionnelles.</li>
+                    <br>
+                    <li>Oui, mais d’autres facteurs (éducation, famille) jouent un rôle plus important.</li>
+                    <br>
+                    <li>Non, les jeunes font leurs choix indépendamment des médias.</li>
+               
+                </ul>
                 <br><br>
+
+                <span>Les médias représentent-ils suffisamment de femmes en leadership ?</span>
                 <br><br>
                 <img src="sondage/sondage 8.png" alt="Image de sondage 8" style="width:200px;height:auto;">
                 <br><br>
-                <span>Les médias reflètent-ils la diversité des genres de manière équilibrée ?</span>
+                <p>Réponses :</p>
+                <br>
+                <ul>
+                    <li>Non, les femmes leaders sont sous-représentées.</li>
+                    <br>
+                    <li>Oui, mais elles sont souvent stéréotypées.</li>
+                    <br>
+                    <li>Oui, les médias mettent en avant des femmes leaders variées et inspirantes.</li>
+                </ul>
                 <br><br>
+
+                <span>Les médias reflètent-ils la diversité des genres de manière équilibrée ?</span>
                 <br><br>
                 <img src="sondage/sondage 9.png" alt="Image de sondage 9" style="width:200px;height:auto;">
                 <br><br>
-                <span>La représentation des genres dans les médias a-t-elle évolué positivement ?</span>
+                <p>Réponses :</p>
+                <br>
+                <ul>
+                    <li>Non, la diversité des genres est encore peu représentée.</li>
+                    <br>
+                    <li>Oui, mais principalement dans certains types de médias.</li>
+                    <br>
+                    <li>Oui, les médias intègrent de plus en plus toutes les identités de genre.</li>
+                <ul>
                 <br><br>
+
+                <span>La représentation des genres dans les médias a-t-elle évolué positivement ?</span>
                 <br><br>
                 <img src="sondage/sondage 10.png" alt="Image de sondage 10" style="width:200px;height:auto;">
                 <br><br>
+                <p>Réponses :</p>
+                <br>
+                <ul>
+                    <li>Oui, il y a une nette amélioration.</li>
+                    <br>
+                    <li>Oui, mais des inégalités persistent.</li>
+                    <br>
+                    <li>Non, il reste encore beaucoup de progrès à faire.</li>
+                
+                </ul>
                 <br><br>
-                <br><br>
-               
             </div>
             <br><br>
         </div>
@@ -242,7 +337,7 @@
         </div>
 
         <div id="bilan" class="hidden fade-in">
-            <h1>Bilan</h1>
+            <h1>Solution</h1>
             <p style="text-align: center;">Voici un aperçu de ce qui a été fait et ce qui reste à faire pour promouvoir l'égalité des genres sur les réseaux sociaux.</p>
             
             <h2>1. Ce qui a déjà été fait</h2>
