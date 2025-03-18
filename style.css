@@ -830,3 +830,111 @@ button:hover {
         display: none;
     }
 }
+
+
+/* Styles généraux pour les sections */
+.article-section {
+    background: #ffffff; /* Fond blanc */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.article-section h2 {
+    font-size: 1.8em;
+    color: #333; /* Couleur sombre pour le texte */
+    margin-bottom: 15px;
+    border-left: 5px solid #007BFF; /* Bordure bleue */
+    padding-left: 10px;
+}
+
+.article-section p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555; /* Texte gris foncé */
+    margin-bottom: 15px;
+}
+
+.article-section a {
+    color: #007BFF; /* Bleu classique pour les liens */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.article-section a:hover {
+    color: #0056b3; /* Bleu plus foncé au survol */
+    text-decoration: underline;
+}
+
+/* Styles pour les listes */
+.article-section ul {
+    margin: 15px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.article-section ul li {
+    margin-bottom: 10px;
+    color: #444; /* Texte gris foncé */
+}
+
+
+
+/* Styles spécifiques pour la section "Solution" */
+
+
+.bilan-section h3 {
+    font-size: 1.5em;
+    color: #444; /* Texte gris foncé */
+    margin-bottom: 10px;
+    border-left: 4px solid #ffcc00; /* Bordure jaune */
+    padding-left: 10px;
+}
+
+.bilan-section ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.bilan-section ul li {
+    margin-bottom: 8px;
+    color: #555; /* Texte gris */
+}
+
+/* Boutons et liens */
+button.toggle-btn {
+    background: #007BFF; /* Bleu classique */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button.toggle-btn:hover {
+    background: #0056b3; /* Bleu plus foncé au survol */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .article-section, .bilan-section {
+        padding: 15px;
+    }
+
+    .article-section h2, .bilan-section h3 {
+        font-size: 1.5em;
+    }
+
+    .article-section p, .bilan-section ul li {
+        font-size: 0.9em;
+    }
+}
