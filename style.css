@@ -214,7 +214,7 @@ h2 {
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
-
+ 
 .association-item {
     display: flex;
     flex-direction: column;
@@ -228,32 +228,32 @@ h2 {
     color: #fff;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
-
+ 
 .association-item:hover {
     transform: scale(1.05);
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
 }
-
+ 
 .association-item img {
     width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
-
+ 
 .association-item a {
     color: #00d4ff;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
-
+ 
 .association-item a:hover {
     color: #ffcc00;
     text-decoration: underline;
 }
-
-
+ 
+ 
 figcaption {
     font-size: 0.9em;
     color: #fff;
@@ -542,7 +542,7 @@ button:hover {
     margin-bottom: 10px;
     color: #ffffff;
 }
-  
+ 
 /* Sections */
 .bilan-section {
     background: rgba(0, 0, 0, 0.7);
@@ -617,7 +617,7 @@ button:hover {
     transform: scale(1.1);
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
 }
-
+ 
 /* Responsive Design */
 @media (max-width: 768px) {
     /* Ajuster la navbar */
@@ -626,105 +626,105 @@ button:hover {
         align-items: left;
         padding: 10px;
     }
-
+ 
     .nav-links {
         flex-direction: column;
         gap: 15px;
         width: 100%;
     }
-
+ 
     .nav-links a {
         font-size: 16px;
         text-align: left;
         padding: 10px 0;
     }
-
+ 
     .btn-container {
         margin-bottom: 10px;
     }
-
+ 
     /* Ajuster le contenu principal */
     .content {
         padding: 20px;
         margin-top: 60px;
     }
-
+ 
     h1, h2 {
         font-size: 1.5em;
     }
-
+ 
     p {
         font-size: 14px;
         line-height: 1.5;
     }
-
+ 
     /* Ajuster les images */
     .content img, .staff-member img, .association-item img {
         width: 100%;
         max-width: 300px;
         height: auto;
     }
-
+ 
     /* Ajuster les sections */
     .staff {
         flex-direction: column;
         gap: 15px;
     }
-
+ 
     .associations {
         flex-direction: column;
         gap: 20px;
     }
-
+ 
     .association-item {
         width: 100%;
     }
-
+ 
     /* Boutons */
     .btn, .toggle-btn {
         font-size: 14px;
         padding: 8px 12px;
     }
-
+ 
     /* Footer */
     footer {
         padding: 15px;
         text-align: center;
     }
-
+ 
     .footer-links {
         flex-direction: column;
         gap: 10px;
     }
-
+ 
     .footer-links li {
         margin: 5px 0;
     }
 }
-
+ 
 @media (max-width: 480px) {
     /* Ajuster encore plus pour les petits écrans */
     h1, h2 {
         font-size: 1.2em;
     }
-
+ 
     p {
         font-size: 12px;
     }
-
+ 
     .btn, .toggle-btn {
         font-size: 12px;
         padding: 6px 10px;
     }
-
+ 
     .content {
         padding: 15px;
     }
-
+ 
     .navbar {
         padding: 5px;
     }
-
+ 
     .nav-links a {
         font-size: 14px;
     }
@@ -743,27 +743,27 @@ button:hover {
     transition: left 0.3s ease;
     z-index: 1000;
 }
-
+ 
 .side-menu ul {
     list-style: none;
     padding: 0;
 }
-
+ 
 .side-menu ul li {
     margin: 20px 0;
 }
-
+ 
 .side-menu ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s;
 }
-
+ 
 .side-menu ul li a:hover {
     color: #00f7ff;
 }
-
+ 
 .close-btn {
     background: none;
     border: none;
@@ -774,7 +774,7 @@ button:hover {
     top: 10px;
     right: 10px;
 }
-
+ 
 .menu-btn {
     position: fixed;
     top: 20px;
@@ -789,7 +789,7 @@ button:hover {
     z-index: 1001;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
+ 
 .menu-btn:hover {
     background: #00d1e0;
 }
@@ -797,7 +797,7 @@ button:hover {
 .menu-btn {
     display: none;
 }
-
+ 
 /* Afficher le bouton uniquement en format téléphone */
 @media (max-width: 768px) {
     .menu-btn {
@@ -815,18 +815,18 @@ button:hover {
         z-index: 1001;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
-
+ 
     .menu-btn:hover {
         background: #00d1e0;
     }
-
+ 
     /* Cacher la barre de navigation normale sur téléphone */
     .navbar {
         display: none;
     }
 }
-
-
+ 
+ 
 /* Styles généraux pour les sections */
 .article-section {
     background: #ffffff; /* Fond blanc */
@@ -836,12 +836,12 @@ button:hover {
     margin: 20px 0;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+ 
 .article-section:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
+ 
 .article-section h2 {
     font-size: 1.8em;
     color: #333; /* Couleur sombre pour le texte */
@@ -849,43 +849,43 @@ button:hover {
     border-left: 5px solid #007BFF; /* Bordure bleue */
     padding-left: 10px;
 }
-
+ 
 .article-section p {
     font-size: 1em;
     line-height: 1.6;
     color: #555; /* Texte gris foncé */
     margin-bottom: 15px;
 }
-
+ 
 .article-section a {
     color: #007BFF; /* Bleu classique pour les liens */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
-
+ 
 .article-section a:hover {
     color: #0056b3; /* Bleu plus foncé au survol */
     text-decoration: underline;
 }
-
+ 
 /* Styles pour les listes */
 .article-section ul {
     margin: 15px 0;
     padding-left: 20px;
     list-style-type: disc;
 }
-
+ 
 .article-section ul li {
     margin-bottom: 10px;
     color: #444; /* Texte gris foncé */
 }
-
-
-
+ 
+ 
+ 
 /* Styles spécifiques pour la section "Solution" */
-
-
+ 
+ 
 .bilan-section h3 {
     font-size: 1.5em;
     color: #444; /* Texte gris foncé */
@@ -893,17 +893,17 @@ button:hover {
     border-left: 4px solid #ffcc00; /* Bordure jaune */
     padding-left: 10px;
 }
-
+ 
 .bilan-section ul {
     list-style-type: square;
     padding-left: 20px;
 }
-
+ 
 .bilan-section ul li {
     margin-bottom: 8px;
     color: #555; /* Texte gris */
 }
-
+ 
 /* Boutons et liens */
 button.toggle-btn {
     background: #007BFF; /* Bleu classique */
@@ -914,50 +914,50 @@ button.toggle-btn {
     cursor: pointer;
     transition: background 0.3s;
 }
-
+ 
 button.toggle-btn:hover {
     background: #0056b3; /* Bleu plus foncé au survol */
 }
-
+ 
 /* Responsive design */
 @media (max-width: 768px) {
     .article-section, .bilan-section {
         padding: 15px;
     }
-
+ 
     .article-section h2, .bilan-section h3 {
         font-size: 1.5em;
     }
-
+ 
     .article-section p, .bilan-section ul li {
         font-size: 0.9em;
     }
 }
-
+ 
 /* Conteneur principal */
 #accueil {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
-
+ 
 /* En-tête */
 header {
     text-align: center;
     margin-bottom: 30px;
 }
-
+ 
 header h1 {
     font-size: 2.5em;
     color: #007BFF; /* Bleu classique */
     margin-bottom: 10px;
 }
-
+ 
 header p {
     font-size: 1.2em;
     color: #555; /* Texte gris foncé */
 }
-
+ 
 /* Sections */
 section {
     margin-bottom: 40px;
@@ -966,7 +966,7 @@ section {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
+ 
 section h2 {
     font-size: 2em;
     color: #333; /* Texte sombre */
@@ -974,23 +974,23 @@ section h2 {
     border-left: 5px solid #007BFF; /* Bordure bleue */
     padding-left: 10px;
 }
-
+ 
 section p {
     font-size: 1em;
     color: #555; /* Texte gris foncé */
     margin-bottom: 15px;
 }
-
+ 
 section ul {
     list-style-type: disc;
     padding-left: 20px;
 }
-
+ 
 section ul li {
     margin-bottom: 10px;
     color: #444; /* Texte gris foncé */
 }
-
+ 
 /* Liens */
 a {
     color: #007BFF; /* Bleu classique */
@@ -998,12 +998,12 @@ a {
     font-weight: bold;
     transition: color 0.3s;
 }
-
+ 
 a:hover {
     color: #0056b3; /* Bleu plus foncé au survol */
     text-decoration: underline;
 }
-
+ 
 /* Pied de page */
 footer {
     text-align: center;
@@ -1014,8 +1014,22 @@ footer {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
+ 
 footer p {
     font-size: 1.2em;
     margin: 0;
 }
+ 
+/* CSS */
+/* Ajoutez ce code dans votre fichier style.css */
+.question-box {
+    border: 2px solid #4cafa3df; /* Bordure verte */
+    padding: 10px; /* Espacement intérieur */
+    margin: 20px 0; /* Espacement extérieur */
+    border-radius: 10px; /* Coins arrondis */
+    background-color: #04819d93; /* Couleur de fond */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre */
+    font-weight: bold; /* Texte en gras */
+    text-align: center; /* Centrer le texte */
+}
+ 
