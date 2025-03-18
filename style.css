@@ -209,78 +209,46 @@ h2 {
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
- 
+
 .association-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 350px; /* Augmentation de la largeur */
+    width: 350px; /* Largeur des cartes */
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
     padding: 25px;
-    background: rgba(0, 0, 0, 0.8); /* Fond sombre amélioré */
+    background: rgba(0, 0, 0, 0.8); /* Fond sombre */
     color: #fff;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
- 
+
 .association-item:hover {
-    transform: scale(1.00);
+    transform: scale(1.05);
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
 }
- 
+
 .association-item img {
     width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
- 
+
 .association-item a {
     color: #00d4ff;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
- 
 
- 
-.toggle-btn {
-    margin-top: 15px;
-    background: #00d4ff;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background 0.3s;
+.association-item a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
 }
- 
-.toggle-btn:hover {
-    background: #ffcc00;
-}
- 
-.hidden-text {
-    display: none;
-    margin-top: 10px;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-}
- 
-.hidden-text {
-    display: none;
-    opacity: 0;
-    transform: scale(0.95);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    background: rgba(0, 0, 0, 0.8);
-    color: #00f7ff;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 10px;
-}
- 
+
+
 figcaption {
     font-size: 0.9em;
     color: #fff;
