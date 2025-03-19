@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
- 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
- 
+
 body {
     display: flex;
     justify-content: center;
@@ -21,12 +21,10 @@ body {
     text-align: center;
     overflow: auto;
     line-height: 1.6;
-    font-family: 'Roboto', sans-serif; /* Police existante */
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
- 
+
 .navbar {
     display: flex;
     justify-content: center; /* Centre horizontalement la navbar */
@@ -41,7 +39,7 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     border-radius: 0; /* Supprime les bordures arrondies */
 }
- 
+
 .nav-links {
     list-style: none;
     display: flex;
@@ -50,7 +48,7 @@ body {
     padding: 0;
     margin: 0; /* Supprime les marges */
 }
- 
+
 .nav-links a {
     color: white;
     text-decoration: none;
@@ -59,18 +57,18 @@ body {
     transition: color 0.3s, transform 0.2s;
     padding: 10px 15px; /* Ajoute un peu d'espace autour des liens */
 }
- 
+
 .nav-links a:hover {
     color: #00f7ff;
     transform: scale(1.1);
     text-shadow: 0 0 10px #00f7ff;
 }
- 
+
 .btn-container {
     position: absolute;
     left: 20px;
 }
- 
+
 .btn {
     background: #00f7ff;
     border: none;
@@ -82,13 +80,13 @@ body {
     color: white;
     box-shadow: 0 0 10px #00f7ff;
 }
- 
+
 .btn:hover {
     background: #00d1e0;
     transform: scale(1.1);
     box-shadow: 0 0 20px #00d1e0;
 }
- 
+
 .content {
     margin-top: 80px;
     padding: 50px 20px;
@@ -96,11 +94,11 @@ body {
     box-shadow: 0 0 10px #fff;
     background: rgba(0, 0, 0, 0.7);
 }
- 
+
 .hidden {
     display: none;
 }
- 
+
 h1 {
     font-size: 28px;
     font-weight: bold;
@@ -112,7 +110,7 @@ h1 {
     padding: 10px;
     font-family: 'Poppins', sans-serif;
 }
- 
+
 h2 {
     font-size: 2em;
     color: #fff;
@@ -121,13 +119,13 @@ h2 {
     font-family: 'Poppins', sans-serif;
     text-shadow: none; /* Supprimer l'ombre du texte */
 }
- 
+
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeIn 0.6s ease-in-out forwards;
 }
- 
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -138,7 +136,7 @@ h2 {
         transform: translateY(0);
     }
 }
- 
+
 .staff {
     display: flex;
     justify-content: center;
@@ -148,11 +146,11 @@ h2 {
     box-shadow: 0 0 10px #fff;
     padding: 20px;
 }
- 
+
 .staff-member {
     text-align: center;
 }
- 
+
 .staff-member img {
     width: 150px;
     height: auto;
@@ -160,12 +158,12 @@ h2 {
     border-radius: 15px;
     box-shadow: 0 0 10px #fff;
 }
- 
+
 .staff-member img:hover {
     transform: scale(1.1);
     box-shadow: 0 0 20px #fff;
 }
- 
+
 .content img {
     width: 420px;
     height: auto;
@@ -173,13 +171,13 @@ h2 {
     border-radius: 15px;
     box-shadow: 0 0 10px #fff;
 }
- 
+
 .content img:hover {
     transform: scale(1.1);
     border-radius: 25px;
     box-shadow: 0 0 20px #fff;
 }
- 
+
 .survey-item {
     grid-row: auto;
     text-align: center;
@@ -190,20 +188,20 @@ h2 {
     background: rgba(0, 0, 0, 0.7); /* Couleur sombre */
     color: #fff; /* Texte en blanc pour contraste */
 }
- 
+
 .survey-item img {
     width: 100%;
     height: auto;
     margin-top: 10px;
 }
- 
+
 .special-survey-item {
     background-color: #f0f8ff; /* Couleur de fond différente */
     border: 2px solid #000; /* Bordure noire */
     padding: 10px;
     margin: 10px 0;
 }
- 
+
 .associations {
     display: flex;
     flex-wrap: wrap;
@@ -214,7 +212,7 @@ h2 {
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
- 
+
 .association-item {
     display: flex;
     flex-direction: column;
@@ -226,34 +224,22 @@ h2 {
     padding: 25px;
     background: rgba(0, 0, 0, 0.8); /* Fond sombre */
     color: #fff;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
- 
-.association-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
-}
- 
+
 .association-item img {
     width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
- 
+
 .association-item a {
     color: #00d4ff;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
- 
-.association-item a:hover {
-    color: #ffcc00;
-    text-decoration: underline;
-}
- 
- 
+
 figcaption {
     font-size: 0.9em;
     color: #fff;
@@ -263,7 +249,7 @@ figcaption {
     background: rgba(0, 0, 0, 0.7); /* Couleur sombre */
     color: #fff; /* Texte en blanc pour contraste */
 }
- 
+
 button {
     width: 100%;
     height: 40px;
@@ -277,124 +263,16 @@ button {
     font-weight: 500;
     transition: .5s ease;
 }
- 
+
 button:hover {
     background: #00f7ff;
     box-shadow: 0 0 15px #00f7ff, 0 0 15px #00f7ff;
 }
- 
-.login-light {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 500px;
-    height: 10px;
-    background: #00f7ff;
-    border-radius: 20px;
-}
- 
-.light {
-    position: absolute;
-    top: -200%;
-    left: 0;
-    width: 100%;
-    height: 950px;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, .3) -50%, rgba(255, 255, 255, 0) 90%);
-    clip-path: polygon(20% 0, 80% 0, 100% 100%, 0 100%);
-    pointer-events: none;
-    transition: .5s ease;
-}
- 
+
 .input-check:checked~.light {
     top: -90%;
 }
- 
-.toggle {
-    position: absolute;
-    top: 20px;
-    right: -70px;
-    width: 60px;
-    height: 120px;
-    background: #191919;
-    border-radius: 10px;
-}
- 
-.toggle::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 10px;
-    height: 80%;
-    background: #000;
-}
- 
-.toggle::after {
-    content: '';
-    position: absolute;
-    top: 5px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 45px;
-    height: 45px;
-    background: #333;
-    border: 2px solid #191919;
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
-    transition: .5s ease;
-}
- 
-.input-check:checked~.toggle::after {
-    top: 65px;
-}
- 
-.input-check {
-    position: absolute;
-    right: -70px;
-    z-index: 1;
-    opacity: 0;
-}
- 
-.toggle .text {
-    position: absolute;
-    top: 17px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #fff;
-    font-size: 1em;
-    z-index: 1;
-    text-transform: uppercase;
-    pointer-events: none;
-    transition: .5s ease;
-}
- 
-.toggle .text.off {
-    opacity: 1;
-}
- 
-.input-check:checked~.toggle .text.off {
-    top: 76px;
-    opacity: 0;
-}
- 
-.toggle .text.on {
-    opacity: 0;
-}
- 
-.input-check:checked~.toggle .text.on {
-    top: 76px;
-    opacity: 1;
-    color: #00f7ff;
-    text-shadow:
-        0 0 15px #00f7ff,
-        0 0 30px #00f7ff,
-        0 0 45px #00f7ff,
-        0 0 60px #00f7ff;
-}
- 
+
 #bilan {
     padding: 50px 20px;
     background: linear-gradient(to right, #1e3c72, #2a5298); /* Dégradé bleu */
@@ -403,46 +281,46 @@ button:hover {
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
- 
+
 #bilan h1 {
     color: #fff; /* Texte en blanc pour contraste */
     text-align: center;
     margin-bottom: 20px;
 }
- 
+
 #bilan section {
     margin-bottom: 30px;
 }
- 
+
 #bilan h2 {
     color: #fff; /* Texte en blanc pour contraste */
     border-bottom: 2px solid #fff; /* Bordure blanche pour contraste */
     padding-bottom: 5px;
     margin-bottom: 15px;
 }
- 
+
 #bilan h3 {
     color: #fff; /* Texte en blanc pour contraste */
     margin-top: 20px;
     margin-bottom: 10px;
 }
- 
+
 #bilan p {
     line-height: 1.6;
     text-align: justify;
     margin-bottom: 15px;
 }
- 
+
 #bilan ul {
     list-style-type: disc;
     margin-left: 20px;
     margin-bottom: 15px;
 }
- 
+
 #bilan ul li {
     margin-bottom: 10px;
 }
- 
+
 #bilan article {
     background: rgba(255, 255, 255, 0.1); /* Fond semi-transparent pour contraste */
     padding: 20px;
@@ -450,72 +328,8 @@ button:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
- 
-.hidden-text {
-    display: none;
-    margin-top: 10px;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-}
- 
-.toggle-btn {
-    margin-top: 15px;
-    background: #00d4ff;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background 0.3s;
-}
- 
-.toggle-btn:hover {
-    background: #ffcc00;
-}
- 
-.hidden-text {
-    display: none;
-    opacity: 0;
-    transform: scale(0.95);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    background: rgba(0, 0, 0, 0.8);
-    color: #00f7ff;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 10px;
-}
- 
-.toggle-btn {
-    background: linear-gradient(45deg, #2e3192, #1bffff);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    color: white;
-    font-size: 16px;
-    margin-top: 10px;
-    transition: background 0.3s, transform 0.3s;
-}
- 
-.toggle-btn:hover {
-    background: linear-gradient(45deg, #1bffff, #2e3192);
-    transform: scale(1.1);
-}
- 
-.enlarged {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    height: auto;
-    z-index: 1000;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
- 
-/* Style for the Bilan page */
+
+
 .bilan-section {
     margin-bottom: 20px;
     padding: 10px;
@@ -523,26 +337,26 @@ button:hover {
     border-radius: 5px;
     background-color: #f9f9f9;
 }
- 
+
 .bilan-section h3 {
     margin-top: 0;
     color: #333;
 }
- 
+
 .bilan-section ul {
     list-style-type: disc;
     padding-left: 20px;
 }
- 
+
 .bilan-section ul li {
     margin-bottom: 10px;
 }
- 
+
 .bilan-section p {
     margin-bottom: 10px;
     color: #ffffff;
 }
- 
+
 /* Sections */
 .bilan-section {
     background: rgba(0, 0, 0, 0.7);
@@ -552,29 +366,29 @@ button:hover {
     margin-bottom: 20px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
- 
+
 .bilan-section:hover {
     transform: scale(1.02);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
- 
+
 .bilan-section h2, .bilan-section h3 {
     color: #00f7ff;
- 
+
 }
- 
+
 /* Liste et texte */
 .bilan-section p {
     font-size: 16px;
     line-height: 1.6;
     text-align: justify;
 }
- 
+
 .bilan-section ul {
     list-style-type: none;
     padding: 0;
 }
- 
+
 .bilan-section ul li {
     background: rgba(255, 255, 255, 0.1);
     padding: 10px;
@@ -582,42 +396,12 @@ button:hover {
     margin-bottom: 10px;
     transition: transform 0.3s;
 }
- 
+
 .bilan-section ul li:hover {
     transform: scale(1.05);
     background: rgba(255, 255, 255, 0.2);
 }
- 
-/* Boutons */
-.bilan-section .toggle-btn {
-    background: linear-gradient(45deg, #2e3192, #1bffff);
-    color: white;
-    padding: 12px 18px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background 0.3s, transform 0.3s;
-}
- 
-.bilan-section .toggle-btn:hover {
-    background: linear-gradient(45deg, #1bffff, #2e3192);
-    transform: scale(1.1);
-}
- 
-/* Images */
-.bilan-section img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
- 
-.bilan-section img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
-}
- 
+
 /* Responsive Design */
 @media (max-width: 768px) {
     /* Ajuster la navbar */
@@ -626,105 +410,105 @@ button:hover {
         align-items: left;
         padding: 10px;
     }
- 
+
     .nav-links {
         flex-direction: column;
         gap: 15px;
         width: 100%;
     }
- 
+
     .nav-links a {
         font-size: 16px;
         text-align: left;
         padding: 10px 0;
     }
- 
+
     .btn-container {
         margin-bottom: 10px;
     }
- 
+
     /* Ajuster le contenu principal */
     .content {
         padding: 20px;
         margin-top: 60px;
     }
- 
+
     h1, h2 {
         font-size: 1.5em;
     }
- 
+
     p {
         font-size: 14px;
         line-height: 1.5;
     }
- 
+
     /* Ajuster les images */
     .content img, .staff-member img, .association-item img {
         width: 100%;
         max-width: 300px;
         height: auto;
     }
- 
+
     /* Ajuster les sections */
     .staff {
         flex-direction: column;
         gap: 15px;
     }
- 
+
     .associations {
         flex-direction: column;
         gap: 20px;
     }
- 
+
     .association-item {
         width: 100%;
     }
- 
+
     /* Boutons */
     .btn, .toggle-btn {
         font-size: 14px;
         padding: 8px 12px;
     }
- 
+
     /* Footer */
     footer {
         padding: 15px;
         text-align: center;
     }
- 
+
     .footer-links {
         flex-direction: column;
         gap: 10px;
     }
- 
+
     .footer-links li {
         margin: 5px 0;
     }
 }
- 
+
 @media (max-width: 480px) {
     /* Ajuster encore plus pour les petits écrans */
     h1, h2 {
         font-size: 1.2em;
     }
- 
+
     p {
         font-size: 12px;
     }
- 
+
     .btn, .toggle-btn {
         font-size: 12px;
         padding: 6px 10px;
     }
- 
+
     .content {
         padding: 15px;
     }
- 
+
     .navbar {
         padding: 5px;
     }
- 
+
     .nav-links a {
         font-size: 14px;
     }
@@ -743,27 +527,27 @@ button:hover {
     transition: left 0.3s ease;
     z-index: 1000;
 }
- 
+
 .side-menu ul {
     list-style: none;
     padding: 0;
 }
- 
+
 .side-menu ul li {
     margin: 20px 0;
 }
- 
+
 .side-menu ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s;
 }
- 
+
 .side-menu ul li a:hover {
     color: #00f7ff;
 }
- 
+
 .close-btn {
     background: none;
     border: none;
@@ -774,7 +558,7 @@ button:hover {
     top: 10px;
     right: 10px;
 }
- 
+
 .menu-btn {
     position: fixed;
     top: 20px;
@@ -789,7 +573,7 @@ button:hover {
     z-index: 1001;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
- 
+
 .menu-btn:hover {
     background: #00d1e0;
 }
@@ -797,7 +581,7 @@ button:hover {
 .menu-btn {
     display: none;
 }
- 
+
 /* Afficher le bouton uniquement en format téléphone */
 @media (max-width: 768px) {
     .menu-btn {
@@ -815,95 +599,90 @@ button:hover {
         z-index: 1001;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
- 
+
     .menu-btn:hover {
         background: #00d1e0;
     }
- 
+
     /* Cacher la barre de navigation normale sur téléphone */
     .navbar {
         display: none;
     }
 }
- 
- 
+
 /* Styles généraux pour les sections */
 .article-section {
-    background: #ffffff; /* Fond blanc */
+    background: rgba(0, 0, 0, .7); /* Fond gris clair */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 20px 0;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
- 
+
 .article-section:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
- 
+
 .article-section h2 {
     font-size: 1.8em;
-    color: #333; /* Couleur sombre pour le texte */
+    color: white; /* Couleur sombre pour le texte */
     margin-bottom: 15px;
     border-left: 5px solid #007BFF; /* Bordure bleue */
     padding-left: 10px;
 }
- 
+
 .article-section p {
     font-size: 1em;
     line-height: 1.6;
-    color: #555; /* Texte gris foncé */
+    color: white; /* Texte gris foncé */
     margin-bottom: 15px;
 }
- 
+
 .article-section a {
     color: #007BFF; /* Bleu classique pour les liens */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
- 
+
 .article-section a:hover {
     color: #0056b3; /* Bleu plus foncé au survol */
     text-decoration: underline;
 }
- 
+
 /* Styles pour les listes */
 .article-section ul {
     margin: 15px 0;
     padding-left: 20px;
     list-style-type: disc;
 }
- 
+
 .article-section ul li {
     margin-bottom: 10px;
     color: #444; /* Texte gris foncé */
 }
- 
- 
- 
+
 /* Styles spécifiques pour la section "Solution" */
- 
- 
+
 .bilan-section h3 {
     font-size: 1.5em;
     color: #444; /* Texte gris foncé */
     margin-bottom: 10px;
-    border-left: 4px solid #ffcc00; /* Bordure jaune */
     padding-left: 10px;
 }
- 
+
 .bilan-section ul {
     list-style-type: square;
     padding-left: 20px;
 }
- 
+
 .bilan-section ul li {
     margin-bottom: 8px;
-    color: #555; /* Texte gris */
+    
 }
- 
+
 /* Boutons et liens */
 button.toggle-btn {
     background: #007BFF; /* Bleu classique */
@@ -914,83 +693,82 @@ button.toggle-btn {
     cursor: pointer;
     transition: background 0.3s;
 }
- 
+
 button.toggle-btn:hover {
     background: #0056b3; /* Bleu plus foncé au survol */
 }
- 
+
 /* Responsive design */
 @media (max-width: 768px) {
     .article-section, .bilan-section {
         padding: 15px;
     }
- 
+
     .article-section h2, .bilan-section h3 {
         font-size: 1.5em;
     }
- 
+
     .article-section p, .bilan-section ul li {
         font-size: 0.9em;
     }
 }
- 
+
 /* Conteneur principal */
 #accueil {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
- 
+
 /* En-tête */
 header {
     text-align: center;
     margin-bottom: 30px;
 }
- 
+
 header h1 {
     font-size: 2.5em;
-    color: #007BFF; /* Bleu classique */
     margin-bottom: 10px;
 }
- 
+
 header p {
     font-size: 1.2em;
     color: #555; /* Texte gris foncé */
 }
- 
+
 /* Sections */
 section {
     margin-bottom: 40px;
     padding: 20px;
-    background: #ffffff; /* Fond blanc */
+    background: rgba(0, 0, 0, .7); /* Fond blanc */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
- 
+
 section h2 {
     font-size: 2em;
-    color: #333; /* Texte sombre */
+    color: white; /* Texte sombre */
     margin-bottom: 15px;
     border-left: 5px solid #007BFF; /* Bordure bleue */
     padding-left: 10px;
 }
- 
+
 section p {
     font-size: 1em;
-    color: #555; /* Texte gris foncé */
+    color: white; /* Texte gris foncé */
     margin-bottom: 15px;
 }
- 
+
 section ul {
     list-style-type: disc;
     padding-left: 20px;
 }
- 
+
 section ul li {
     margin-bottom: 10px;
-    color: #444; /* Texte gris foncé */
+    color: white; /* Texte gris foncé */
 }
- 
+
 /* Liens */
 a {
     color: #007BFF; /* Bleu classique */
@@ -998,12 +776,12 @@ a {
     font-weight: bold;
     transition: color 0.3s;
 }
- 
+
 a:hover {
     color: #0056b3; /* Bleu plus foncé au survol */
     text-decoration: underline;
 }
- 
+
 /* Pied de page */
 footer {
     text-align: center;
@@ -1014,12 +792,12 @@ footer {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
- 
+
 footer p {
     font-size: 1.2em;
     margin: 0;
 }
- 
+
 /* CSS */
 /* Ajoutez ce code dans votre fichier style.css */
 .question-box {
@@ -1032,4 +810,3 @@ footer p {
     font-weight: bold; /* Texte en gras */
     text-align: center; /* Centrer le texte */
 }
- 
